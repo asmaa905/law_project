@@ -1,0 +1,21 @@
+{
+    "welcome": "أهلا بك",
+    "instructions": "أدخل بريدك الإلكتروني وكلمة المرور لتسجيل الدخول",
+    "name_lable": "اسمك",
+    "name_placeholder": "اسمك بالكامل",
+    "email_label": "البريد الالكترونى",
+    "email_placeholder": "بريدك الالكترونى",
+    "password_label": "كلمة السر",
+    "password_placeholder": "كلمة السر الخاصة بك",
+    "remember_me": "تذكرنى",
+    "login": "تسجيل الدخول",
+    "no_account": "ليس لديك حساب؟",
+    "create_account": "انشاء حساب",
+    "welcome_to_you": "اهلا بكم!",
+    "or": "او",
+    "register_within": "سجل من خلال",
+    "you_have_account": "لديك حساب بالفعل",
+    "facebook": "فيسبوك",
+    "google": "جوجل",
+    "apple": "ابل"
+}

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+html {
+  direction: rtl; /* default */
+}
+
+html[dir="ltr"] {
+  direction: ltr;
+}
+[dir="ltr"] body {
+  direction: ltr;
+  text-align: left;
+}
+body{
+   font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+@media screen and (max-width: 1240px) {
+    .container {
+        width: 90% !important;
+        padding: 0;
+    }
+}
+.container
+ {
+     width: 90% !important;
+    margin-right: auto;
+    margin-left: auto;
+}

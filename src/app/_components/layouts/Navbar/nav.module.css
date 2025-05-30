@@ -1,0 +1,59 @@
+.navtext {
+  color: #134776;
+  font-family: "Changa", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.fontFamilyChanga {
+  font-family: "Changa", sans-serif;
+}
+
+.active {
+  color: rgb(201, 168, 94);
+  position: relative; /* Moved this to the active class */
+}
+
+.consult {
+  font-weight: 200;
+  letter-spacing: 0px;
+  background-color: #134776;
+  border-style: solid;
+  border-width: 0px 1px;
+  border-radius: 0px;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.consultText {
+  font-weight: 200;
+  color: white;
+  font-weight: bold;
+}
+
+.consult:hover {
+  background-color: rgb(201, 168, 94);
+}
+
+/* Fixed the active link indicator */
+.navlink a.active::after {
+  content: "";
+  display: block;
+  background-color: #c9a85e;
+  width: 16px;
+  height: 2.5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Make sure navlink has proper positioning */
+.navlink {
+  position: relative;
+}
