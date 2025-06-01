@@ -9,7 +9,7 @@ export default function SomeServices() {
     return (
         <>
             <div className=" py-[100px] relative mx-[100px] bg-white">
-                <div className="container  transform-[translateY(-20%)] right-[5%] bg-white pt-16">
+                <div className="container  transform-[translateY(-20%)] right-[5%] bg-white pt-16 mx-0 sm:mx-auto">
                     <div className="head flex flex-col justify-center items-center text-center pb-4">
                         <div className="icon  w-[25%]  mx-auto ">
                             <FontAwesomeIcon icon={faBank} className="leading-[1] font-[900] text-[28px] text-[#C9A85E]" />
@@ -22,7 +22,7 @@ export default function SomeServices() {
                         </p>
                     </div>
                     <div className="content w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
-                        <div className="member w-1/4  px-2 group cursor-pointer">
+                        <div className="member w-full sm:w-1/2 md:w-1/4  px-2 group cursor-pointer">
                             <div className="content  h-full border-[#C9A85E] border-4 bg-transparent bg-[linear-gradient(0deg,_#134776,_#C9A85E)] p-[3px_3px_40px]">
                                 <div className="cover relative">
                                     <div className="image">
@@ -53,7 +53,7 @@ export default function SomeServices() {
                             </div>
                         </div>
 
-                        <div className="member w-1/4  px-2 group cursor-pointer">
+                        <div className="member w-full sm:w-1/2 md:w-1/4  px-2 group cursor-pointer">
                             <div className="content w-full  h-full border-[#C9A85E] border-4 bg-transparent bg-[linear-gradient(0deg,_#134776,_#C9A85E)] p-[3px_3px_40px]">
                                 <div className="cover relative">
                                     <div className="image w-full h-full">
@@ -83,7 +83,7 @@ export default function SomeServices() {
                                 </div>
                             </div>
                         </div>
-                        <div className="member w-1/4  px-2 group cursor-pointer">
+                        <div className="member w-full sm:w-1/2 md:w-1/4  px-2 group cursor-pointer">
                             <div className="content w-full  h-full border-[#C9A85E] border-4 bg-transparent bg-[linear-gradient(0deg,_#134776,_#C9A85E)] p-[3px_3px_40px]">
                                 <div className="cover relative">
                                     <div className="image w-full h-full">
@@ -116,7 +116,7 @@ export default function SomeServices() {
                         </div>
 
 
-                        <div className="member w-1/4  px-2 group cursor-pointer">
+                        <div className="member w-full sm:w-1/2 md:w-1/4  px-2 group cursor-pointer">
                             <div className="content  h-full border-[#C9A85E] border-4 bg-transparent bg-[linear-gradient(0deg,_#134776,_#C9A85E)] p-[3px_3px_40px]">
                                 <div className="cover relative">
                                     <div className="image">

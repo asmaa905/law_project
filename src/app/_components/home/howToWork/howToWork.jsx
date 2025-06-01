@@ -29,7 +29,6 @@ export default function HeaderPage() {
                                 </p>
                             </div>
                             <div className="image w-full  flex flex-col md:flex-row pt-[100px] pr-[40px]">
-                                {/* public\assets\images\ */}
                                 <img src="assets/images/background_4.png" alt="service" />
                             </div>
                             <div className="how-to-work-items  flex flex-col md:flex-row">
@@ -87,10 +86,11 @@ export default function HeaderPage() {
 
                             </div>
                             <button className="group cursor-pointer mx-auto mt-[100px] font-[300]
-                                text-white bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] 
-                                text-[18px] leading-[29px] p-[20px_40px] 
-                                hover:bg-white hover:text-[rgb(201,_168,_94)] 
-                                hover:shadow-[1px_2px_5px_rgb(255,_255,_255)] hover:border-[rgb(201,_168,_94)]
+                                text-white hover:bg-white bg-[rgb(19,_71,_118)] 
+                                bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] 
+                                hover:bg-none
+                                text-[18px] leading-[29px] p-[20px_40px]  hover:text-[rgb(201,_168,_94)] 
+                                hover:border-[rgb(201,_168,_94)]
                                 transition-[all_duration-200_ease-in-out]
                                 flex flex-row justify-between items-center gap-6
                         ">

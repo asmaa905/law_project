@@ -2,6 +2,7 @@
 "use client";
 import * as React from "react";
 import { useRouter } from "next/navigation";
+import "./SomeServices.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBalanceScale, faBuilding, faBusinessTime, faFileContract, faGavel, faMask, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons';
 export default function SomeServices() {
@@ -35,7 +36,9 @@ export default function SomeServices() {
                         </div>
                         <div className="w-1/3 bg-[#134776]">
                             <ul className="w-full h-full">
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
+                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center  active">
                                     <span className="">تأسيس الشركات</span>
                                     <FontAwesomeIcon icon={faBusinessTime} />
                                 </li>
