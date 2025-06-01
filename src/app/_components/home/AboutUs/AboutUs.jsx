@@ -8,8 +8,8 @@ export default function AboutUs() {
         <>
             <div className="about-us ">
                 <div className=" h-full relative">
-                    <div className="head-cover w-full h-[700px] relative " >
-                        <div className="image w-full h-full">
+                    <div className="head-cover w-full min-h-[700px] relative " >
+                        <div className="image w-full min-h-full">
                             <img src="assets/images/rawid-alhikma.jpg" alt="cover" className="w-full h-full" />
                         </div>
                         <div className="cover w-full h-full absolute top-0 right-0 bottom-0 left-0 flex flex-col  pt-[100px]" style={{ backgroundColor: "#2A3D8B", opacity: "0.9" }}>
@@ -62,25 +62,24 @@ export default function AboutUs() {
 
                         </div>
                     </div>
-                    <div className="floating-about bg-white pb-[200px]">
-                        <div className="container relative">
-                            <div className="notifcation bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] w-[90%] mx-auto 
-                            absolute bottom-[-96px] left-[5%] p-[50px_50px] flex flex-col sm:flex-row justify-between items-center gap-2">
-                                <div className="w-1/4">
-                                    <button className="group cursor-pointer font-[300] text-[#1e4686] bg-[white]  flex flex-row justify-center 
+                    <div className="floating-about bg-white pb-[50px]">
+
+                        <div className="notifcation bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] w-[80%] mx-auto 
+                            transform-[translateY(unset)] sm:transform-[translateY(-25%)]  sm:-translate-x-[5%] translate-x-[unset] flex flex-col sm:flex-row justify-between items-center gap-2  p-[50px_50px]">
+                            <div className="w-1/4">
+                                <button className="group cursor-pointer font-[300] text-[#1e4686] bg-[white]  flex flex-row justify-center 
                               items-center text-[18px] leading-[29px]  hover:bg-[transparent] hover:border-[white] hover:border-2 border-0 hover:text-white p-[.6em_1.2em]
                             transition-[background_.2s_ease-in-out,_color_.2s_ease-in-out,_border-color_.2s_ease-in-out_!important]">
-                                        <FontAwesomeIcon icon={faAngleLeft} className="text-[#1e4686]  group-hover:text-white font-[900] text-[18px] leading-[36px] pr-3" />
-                                        <strong>ارسل طلب</strong>
-                                    </button>
-                                </div>
-                                <div className="w-1/2">
-                                    <h3 className="font-[700] text-[#fff] text-[32px] leading-[45px] text-right">اطلب دراسة قضيتك</h3>
-                                    <p className="font-[300] text-[#fff] text-[18px] leading-[29px] text-right">شركة رواد الحكمة تتيح لك طلب دراسة قضيتك وحيثياتها وبيان موقفك فيها .</p>
-                                </div>
-                                <div className="w-1/10 icon h-[60px]">
-                                    <img src="assets/images/study.webp" alt="study" className="w-full h-full" />
-                                </div>
+                                    <FontAwesomeIcon icon={faAngleLeft} className="text-[#1e4686]  group-hover:text-white font-[900] text-[18px] leading-[36px] pr-3" />
+                                    <strong>ارسل طلب</strong>
+                                </button>
+                            </div>
+                            <div className="w-1/2">
+                                <h3 className="font-[700] text-[#fff] text-[32px] leading-[45px] text-right">اطلب دراسة قضيتك</h3>
+                                <p className="font-[300] text-[#fff] text-[18px] leading-[29px] text-right">شركة رواد الحكمة تتيح لك طلب دراسة قضيتك وحيثياتها وبيان موقفك فيها .</p>
+                            </div>
+                            <div className="w-1/10 icon h-[60px]">
+                                <img src="assets/images/study.webp" alt="study" className="w-full h-full" />
                             </div>
                         </div>
                     </div>

@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <>
       <div className="footer-top text-white text-right pt-[60px] pb-[50px] bg-[#134776]">
-        <div className="container flex flex-col sm:flex-row justify-between items-start gap-6">
-          <div className="w-full sm:w-1/2 md:w-1/3">
+        <div className="container flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start gap-6">
+          <div className="w-full sm:w-1/2 md:w-1/3 ">
             <h4 className=" mb-[20px] font-[400] text-white text-[20px] leading-[28px] pt-[14px] pr-[22px] pb-[14px] b-w-[0_0_1px] rounded-[2px] bg-transparent bg-[linear-gradient(-90deg,__rgba(0,_0,_0,_0.22),_#134776)]">تواصل معنا</h4>
             <div className="content">
               <div className="col-cont flex flex-col justify-center items-end  mb-[20px]">

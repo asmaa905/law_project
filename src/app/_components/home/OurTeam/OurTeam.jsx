@@ -8,8 +8,8 @@ export default function SomeServices() {
     let router = useRouter();
     return (
         <>
-            <div className=" py-[100px] relative mx-[100px] bg-white">
-                <div className="container  transform-[translateY(-20%)] right-[5%] bg-white pt-16 mx-0 sm:mx-auto">
+            <div className=" py-[100px] relative md:mx-[100px] mx-0 bg-white">
+                <div className="container transform-[translateY(-7%)] md:transform-[translateY(-20%)] right-[5%] bg-white md:pt-16 mx-0 sm:mx-auto p-[50px_10px] ">
                     <div className="head flex flex-col justify-center items-center text-center pb-4">
                         <div className="icon  w-[25%]  mx-auto ">
                             <FontAwesomeIcon icon={faBank} className="leading-[1] font-[900] text-[28px] text-[#C9A85E]" />

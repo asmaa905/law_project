@@ -9,7 +9,7 @@ export default function SomeServices() {
         <>
             <div className="bg-[url('/assets/images/bg2.webp')] bg-center bg-cover py-[100px]">
                 <div className="container">
-                    <div className="content w-full h-full flex flex-col md:flex-row justify-center items-center">
+                    <div className="content w-full h-full flex flex-col-reverse md:flex-row justify-center items-center">
                         <div className="w-1/4 flex flex-col justify-center items-center">
 
                             <h5 className="font-[500] text-[rgb(19,_71,_118)] text-[70px] leading-[normal] pb-[5px] mb-[15px] border-b-[#c9a85e] border-b-[5px]">
