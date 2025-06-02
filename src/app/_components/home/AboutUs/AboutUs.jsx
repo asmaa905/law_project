@@ -8,7 +8,7 @@ export default function AboutUs() {
         <>
             <div className="about-us ">
                 <div className=" h-full relative">
-                    <div className="head-cover w-full sm:h-[700px] relative">
+                    <div className="head-cover w-full  h-[1100px]  sm:h-[700px] relative">
                         {/* Background Image */}
                         <div className="absolute inset-0 w-full h-full">
                             <img
@@ -69,10 +69,10 @@ export default function AboutUs() {
                     </div>
                     <div className="floating-about bg-white pb-[50px]">
 
-                        <div className="notifcation bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] w-[80%] mx-auto 
+                        <div className="notifcation bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] w-[80%] mx-auto my-3 sm:my-0  
                             transform-[translateY(unset)] sm:transform-[translateY(-25%)]  sm:-translate-x-[5%] translate-x-[unset] 
                             flex flex-col-reverse sm:flex-row justify-center sm:justify-between items-center gap-2 p-[10px_10px] sm:p-[50px_50px]">
-                            <div className="w-1/3 sm:w-1/4">
+                            <div className="w-full sm:w-1/4">
                                 <button className="group cursor-pointer font-[300] text-[#1e4686] bg-[white]  flex flex-row justify-center 
                               items-center text-[18px] leading-[29px]  hover:bg-[transparent] hover:border-[white] hover:border-2 border-0 hover:text-white p-[.6em_1.2em]
                             transition-[background_.2s_ease-in-out,_color_.2s_ease-in-out,_border-color_.2s_ease-in-out_!important]">

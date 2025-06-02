@@ -9,13 +9,13 @@ export default function HeaderPage() {
     let router = useRouter();
     return (
         <>
-            <div className="head-cover w-full  relative h-[1500px]" >
+            <div className="head-cover w-full  relative h-[1500px] sm:h-[1000px]" >
                 <div className="image w-full h-full">
                     <img src="assets/images/backgroud.jpg" alt="cover" className="w-full h-full" />
                 </div>
-                <div className="cover w-full h-full absolute top-0 right-0 bottom-0 left-0 pt-[250px] pb-[100px]
+                <div className="cover w-full h-full absolute top-0 right-0 bottom-0 left-0  pt-[303px] sm:pt-[250px] pb-[100px]
                         flex flex-col justify-center items-center text-center" style={{ backgroundColor: "rgba(255 255 255 /60%)" }}>
-                    <div className="container pb-[200px]">
+                    <div className="container pb-[200px] sm:pb-[10px]">
                         <div className="content">
                             <div className="icon  w-[25%]  mx-auto ">
                                 <FontAwesomeIcon icon={faBank} className="leading-[1] font-[900] text-[28px] text-[#C9A85E]" />
@@ -30,8 +30,8 @@ export default function HeaderPage() {
                         <div className="image w-full  hidden md:flex flex-col md:flex-row pt-[100px] pr-[40px]">
                             <img src="assets/images/background_4.png" alt="service" />
                         </div>
-                        <div className="how-to-work-items  flex flex-col md:flex-row sm:gap-0 gap-5 pt-5">
-                            <div className="w-full sm:w-1/2 md:w-1/4 px-[15px] h-[300px]">
+                        <div className="how-to-work-items  flex flex-col md:flex-row md:gap-0 gap-5 pt-5">
+                            <div className="w-full  md:w-1/4 px-[15px] lg:h-[300px]">
                                 <div className="bg-white p-[60px_35px_40px] m-auto shadow-[0px_5px_25px_0px_rgba(0,_0,_0,_0.1)] h-full">
                                     <h4 className="font-[700] text-[rgb(19,_71,_118)] text-[24px] leading-[34px] pb-[25px]">عن بعد</h4>
                                     <div className="icon">
@@ -44,7 +44,8 @@ export default function HeaderPage() {
                                 </div>
 
                             </div>
-                            <div className="w-full sm:w-1/2 md:w-1/4 px-[15px] h-[300px]">
+                            <div className="w-full  md:w-1/4 px-[15px] lg:h-[300px]">
+
                                 <div className="bg-white p-[60px_35px_40px] m-auto shadow-[0px_5px_25px_0px_rgba(0,_0,_0,_0.1)] h-full">
                                     <h4 className="font-[700] text-[rgb(19,_71,_118)] text-[24px] leading-[34px] pb-[25px]">زيارة ميدانية</h4>
                                     <div className="icon">
@@ -57,7 +58,8 @@ export default function HeaderPage() {
                                 </div>
 
                             </div>
-                            <div className="w-full sm:w-1/2 md:w-1/4 px-[15px] h-[300px]">
+                            <div className="w-full  md:w-1/4 px-[15px] lg:h-[300px]">
+
                                 <div className="bg-white p-[60px_35px_40px] m-auto shadow-[0px_5px_25px_0px_rgba(0,_0,_0,_0.1)] h-full">
                                     <h4 className="font-[700] text-[rgb(19,_71,_118)] text-[24px] leading-[34px] pb-[25px]">زيارة الشركة</h4>
                                     <div className="icon">
@@ -70,7 +72,8 @@ export default function HeaderPage() {
                                 </div>
 
                             </div>
-                            <div className="w-full sm:w-1/2 md:w-1/4 px-[15px] h-[300px]">
+                            <div className="w-full  md:w-1/4 px-[15px] lg:h-[300px]">
+
                                 <div className="bg-white p-[60px_35px_40px] m-auto shadow-[0px_5px_25px_0px_rgba(0,_0,_0,_0.1)] h-full">
                                     <h4 className="font-[700] text-[rgb(19,_71,_118)] text-[24px] leading-[34px] pb-[25px]">طلب استشارة</h4>
                                     <div className="icon">

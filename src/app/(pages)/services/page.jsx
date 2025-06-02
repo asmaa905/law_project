@@ -25,19 +25,19 @@ export default function Services() {
 
                             <div className="container mx-auto">
                                 <ul className="flex flex-col sm:flex-row justify-center items-start flex-wrap mt-4">
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end ">
+                                    <li className="flex flex-row md:w-1/7 sm:w-1/3 w-full justify-end ">
                                         <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">الاحترافية</p>
                                         <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
                                             <FontAwesomeIcon icon={faCheck} className="text-white font-[900] text-[18px] leading-[36px]" />
                                         </div>
                                     </li>
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end">
+                                    <li className="flex  flex-row md:w-1/7 sm:w-1/3 w-full justify-end">
                                         <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">الخبرة</p>
                                         <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
                                             <FontAwesomeIcon icon={faBalanceScale} className="text-white font-[900] text-[18px] leading-[36px]" />
                                         </div>
                                     </li>
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end mb-5">
+                                    <li className="flex flex-row md:w-1/7 sm:w-1/3 w-full justify-end mb-5">
 
                                         <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">المعرفة</p>
                                         <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
@@ -45,7 +45,7 @@ export default function Services() {
                                         </div>
                                     </li>
 
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end">
+                                    <li className="flex flex-row md:w-1/7 sm:w-1/3 w-full justify-end">
                                         <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">الثقة</p>
                                         <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
                                             <FontAwesomeIcon icon={faHandshake} className="text-white font-[900] text-[18px] leading-[36px]" />
@@ -65,7 +65,7 @@ export default function Services() {
                     <div className="floating-about bg-white pb-[200px]">
                         <div className="container relative">
                             <div className="notifcation bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] w-[90%] mx-auto 
-                            absolute bottom-[-96px] left-[5%] p-[50px_50px] flex flex-col sm:flex-row justify-between items-center gap-2">
+                            absolute bottom-[-96px] left-[5%] p-[10px_10px] sm:p-[50px_50px] flex flex-col sm:flex-row justify-between items-center gap-2">
                                 <div className="w-1/4">
                                     <button className="group cursor-pointer font-[300] text-[#1e4686] bg-[white]  flex flex-row justify-center 
                               items-center text-[18px] leading-[29px]  hover:bg-[transparent] hover:border-[white] hover:border-2 border-0 hover:text-white p-[.6em_1.2em]

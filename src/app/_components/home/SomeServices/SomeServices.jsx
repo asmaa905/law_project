@@ -23,7 +23,7 @@ export default function SomeServices() {
                             <span className="block font-[300] text-white text-[18px] leading-[29px]" > عرض جميع خدماتنا</span>
                             <FontAwesomeIcon icon={faBalanceScale} className=" font-[900] text-white text-[24px] leading-[24px]" />
                         </button>
-                        <h2 className=" font-[700] text-[#134776] text-[38px] leading-539px]" >بعض خدماتنا </h2>
+                        <h2 className=" font-[700] text-[#134776] text-[38px] leading-539px] text-center sm:text-right " >بعض خدماتنا </h2>
                     </div>
                     <div className="body flex flex-col-reverse md:flex-row border-2 border-[#ccc] justify-between items-center mt-5  sm:px-0 px-3 sm:pb-0 pb-3">
                         <div className="pt-5 sm:pt-0 w-full sm:w-2/3 flex flex-col-reverse  md:flex-row justify-end items-center sm:px-5 px-0">
@@ -43,7 +43,7 @@ export default function SomeServices() {
                         </div>
                         <div className="w-full sm:w-1/3 bg-[#134776]">
                             <ul className="w-full h-full">
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
                                 cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
                                  flex flex-row gap-2 justify-end items-center  active">
                                     {/*  onClick={openServiceDetails('تأسيس الشركات')} */}
@@ -51,32 +51,40 @@ export default function SomeServices() {
                                     <FontAwesomeIcon icon={faBusinessTime} />
                                 </li>
 
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className="">صياغة وتدقيق كافة العقود </span>
+
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center   text-right ">                                   <span className="">صياغة وتدقيق كافة العقود </span>
                                     <FontAwesomeIcon icon={faFileContract} />
                                 </li>
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className="">الاستشارات القانونية والشرعية</span>
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center  text-right ">                                       <span className="">الاستشارات القانونية والشرعية</span>
                                     <FontAwesomeIcon icon={faBalanceScale} />
                                 </li>
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className="">التمثيل القانوني</span>
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center  text-right ">                                      <span className="">التمثيل القانوني</span>
                                     <FontAwesomeIcon icon={faGavel} />
                                 </li>
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className="">التجارية</span>
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center  text-right ">                                       <span className="">التجارية</span>
                                     <FontAwesomeIcon icon={faBuilding} />
                                 </li>
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className="">الجنائية</span>
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center text-right ">                                       <span className="">الجنائية</span>
                                     <FontAwesomeIcon icon={faMask} />
                                 </li>
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className=""> العمالية والادارية</span>
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center text-right ">                                      <span className=""> العمالية والادارية</span>
                                     <FontAwesomeIcon icon={faUserPlus} />
                                 </li>
-                                <li className="p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)] flex flex-row gap-2 justify-end items-center  ">
-                                    <span className="">الأحوال الشخصية</span>
+                                <li className="p-[12px_5px] sm:p-[12px_20px] hover:bg-white text-[16px] leading-[26px] font-[400]  
+                                cursor-pointer hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center text-right ">                                       <span className="">الأحوال الشخصية</span>
                                     <FontAwesomeIcon icon={faUsers} />
                                 </li>
                             </ul>
