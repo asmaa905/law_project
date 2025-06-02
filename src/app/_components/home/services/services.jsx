@@ -9,10 +9,9 @@ export default function Services() {
             <div className="services py-5">
                 <div className="container h-full">
                     <div className=" flex flex-col-reverse md:flex-row h-full justify-center items-start">
-                        <div className="w-full md:w-2/3  flex flex-col md:flex-row justify-center md:justify-between items-center  text-black h-full flex-wrap my-auto">
+                        <div className="w-full md:w-2/3  flex flex-col md:flex-row justify-center md:justify-between items-center  text-black h-full flex-wrap my-auto mt-5">
                             <div className="w-full sm:w-1/2 mb-5">
-                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]  
-                            flex flex-col justify-center items-center gap-10">
+                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]     flex flex-col justify-center items-center gap-10">
                                     <div className="icon bg-[rgb(19,_71,_118)] text-white w-[64px] h-[64px]  p-3">
                                         <img decoding="async" width="64" height="64" src="https://rowadalhikmah.com/wp-content/uploads/2019/03/icon4.png"
                                             data-src="" className="w-[80%] h-[80%]" alt="" />
@@ -23,8 +22,7 @@ export default function Services() {
                             </div>
 
                             <div className="w-full sm:w-1/2 mb-5">
-                                <div className="content w-[80%] p-[15px]  hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]  
-                            flex flex-col justify-center items-center gap-10">
+                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]     flex flex-col justify-center items-center gap-10">
                                     <div className="icon bg-[rgb(19,_71,_118)] text-white w-[64px] h-[64px]  p-3">
                                         <img decoding="async" src="https://rowadalhikmah.com/wp-content/uploads/2019/03/icon1.png" data-src="" className="
                                w-[80%] h-[80%]" alt="" />
@@ -34,8 +32,7 @@ export default function Services() {
 
                             </div>
                             <div className="w-full sm:w-1/2 mb-5">
-                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]  
-                            flex flex-col justify-center items-center gap-10">
+                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]     flex flex-col justify-center items-center gap-10">
                                     <div className="icon bg-[rgb(19,_71,_118)] text-white w-[64px] h-[64px]  p-3">
                                         <img loading="lazy" decoding="async" width="60" height="60" src="https://rowadalhikmah.com/wp-content/uploads/2019/02/icon1.png" data-src="" className="
                                w-[80%] h-[80%]" alt="" />
@@ -46,8 +43,7 @@ export default function Services() {
                                 </div>
                             </div>
                             <div className="w-full sm:w-1/2 mb-5">
-                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]  
-                            flex flex-col justify-center items-center gap-10">
+                                <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]     flex flex-col justify-center items-center gap-10">
                                     <div className="icon bg-[rgb(19,_71,_118)] text-white w-[64px] h-[64px]  p-3">
                                         <img decoding="async" width="64" height="64" src="https://rowadalhikmah.com/wp-content/uploads/2019/03/icon7.png" data-src="" className="
                                w-[80%] h-[80%]" alt="" />
