@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import styles from './nav.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
 
 export default function Navbar() {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function Navbar() {
           aria-controls="navbar-sticky"
           aria-expanded={isMenuOpen}
         >
-          <span className="sr-only">Open main menu</span>
+          <span className="sr-only">افتح القائمة الرئيسية</span>
           <svg
             className="w-5 h-5"
             aria-hidden="true"
@@ -92,45 +93,51 @@ export default function Navbar() {
                 استشارتك
               </button>
             </div>
+
             <li className="navlink">
-              <a href="#" className={`${styles.navtext} block py-2 px-3 ${activeLink === "تواصل معنا" ? styles.active : ''} block py-2 px-3`}
-                onClick={() => handleLinkClick("انظمة ومقالات")} aria-current="page">تواصل معنا</a>
+              <Link
+                href="/contactUs"
+                passHref
+                className={`${styles.navtext} block py-2 px-3 ${activeLink === "تواصل معنا" ? styles.active : ''} block py-2 px-3`}
+                onClick={() => handleLinkClick("انظمة ومقالات")} aria-current="page">تواصل معنا
+              </Link>
             </li>
             <li className={`${styles.navlink}`}>
-              <a
-                href="#"
+              <Link
+                href="/articles"
+                passHref
                 className={`${styles.navtext} ${activeLink === "انظمة ومقالات" ? styles.active : ''} block py-2 px-3`}
                 onClick={() => handleLinkClick("انظمة ومقالات")}
               >
                 انظمة ومقالات
-              </a>
+              </Link>
             </li>
             <li className={`${styles.navlink}`}>
-              <a
-                href="#"
+              <Link
+                href="/services"
                 className={`${styles.navtext} ${activeLink === "خدماتنا" ? styles.active : ''} block py-2 px-3`}
                 onClick={() => handleLinkClick("خدماتنا")}
               >
                 خدماتنا
-              </a>
+              </Link>
             </li>
             <li className={`${styles.navlink}`}>
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className={`${styles.navtext} ${activeLink === "نبذة عن الشركة" ? styles.active : ''} block py-2 px-3`}
                 onClick={() => handleLinkClick("نبذة عن الشركة")}
               >
                 نبذة عن الشركة
-              </a>
+              </Link>
             </li>
             <li className={`${styles.navlink}`}>
-              <a
-                href="#"
+              <Link
+                href="/"
                 className={`${styles.navtext} ${activeLink === "الرئيسية" ? styles.active : ''} block py-2 px-3`}
                 onClick={() => handleLinkClick("الرئيسية")}
               >
                 الرئيسية
-              </a>
+              </Link>
             </li>
 
             {/* Language and Search (moved outside the ul) */}

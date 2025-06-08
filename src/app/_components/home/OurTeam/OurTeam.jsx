@@ -52,7 +52,6 @@ export default function SomeServices() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="member w-full sm:w-1/2 md:w-1/4  px-2 group cursor-pointer">
                             <div className="content w-full  h-full border-[#C9A85E] border-4 bg-transparent bg-[linear-gradient(0deg,_#134776,_#C9A85E)] p-[3px_3px_40px]">
                                 <div className="cover relative">
@@ -114,8 +113,6 @@ export default function SomeServices() {
                                 </div>
                             </div>
                         </div>
-
-
                         <div className="member w-full sm:w-1/2 md:w-1/4  px-2 group cursor-pointer">
                             <div className="content  h-full border-[#C9A85E] border-4 bg-transparent bg-[linear-gradient(0deg,_#134776,_#C9A85E)] p-[3px_3px_40px]">
                                 <div className="cover relative">
@@ -146,7 +143,6 @@ export default function SomeServices() {
                                 </div>
                             </div>
                         </div>
-                        {/*  */}
                     </div>
                 </div>
                 <div className="content w-[90%] mx-auto flex flex-col justify-center items-center">
