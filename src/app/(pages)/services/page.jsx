@@ -6,6 +6,7 @@ import { faCommentAlt } from "@fortawesome/free-regular-svg-icons";
 import { faBalanceScale, faBuilding, faBusinessTime, faFileContract, faGavel, faMask, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import "./SomeServices.css"
+import { useState } from "react";
 
 import * as React from "react";
 export default function Services() {
