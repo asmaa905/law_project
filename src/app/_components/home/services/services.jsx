@@ -15,12 +15,10 @@ export default function Services() {
                                     <div className="icon bg-[rgb(19,_71,_118)] text-white w-[64px] h-[64px]  p-3">
                                         <img decoding="async" width="64" height="64" src="https://rowadalhikmah.com/wp-content/uploads/2019/03/icon4.png"
                                             data-src="" className="w-[80%] h-[80%]" alt="" />
-
                                     </div>
                                     <h5 className="font-[700] text-[#000] text-[24px] leading-[34px] text-center">تأسيس وحوكمة الشركات</h5>
                                 </div>
                             </div>
-
                             <div className="w-full sm:w-1/2 mb-5">
                                 <div className="content w-[80%] p-[15px] hover:shadow-[0px_10px_25px_rgba(0,_0,_0,_0.13)]     flex flex-col justify-center items-center gap-10">
                                     <div className="icon bg-[rgb(19,_71,_118)] text-white w-[64px] h-[64px]  p-3">

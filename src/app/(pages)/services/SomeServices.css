@@ -1,0 +1,8 @@
+.active{
+    /* hover:bg-white hover:text-[rgb(19,_71,_118)] text-white bg-[rgb(19,_71,_118)]
+                                 flex flex-row gap-2 justify-end items-center  */
+    background-color: white;
+    color:rgb(19,71,118);
+
+
+}
