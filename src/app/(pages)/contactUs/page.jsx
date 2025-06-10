@@ -2,88 +2,131 @@
 "use client";
 import * as React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faBalanceScale, faCheck, faDiamond, faDotCircle, faEnvelope, faEye, faEyeSlash, faGraduationCap, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faBalanceScale, faCheck, faDiamond, faDotCircle, faEnvelope, faEye, faEyeSlash, faGraduationCap, faHandshake, faLocationDot, faPhoneAlt, faPhoneVolume, faPlaneCircleCheck } from '@fortawesome/free-solid-svg-icons';
+
 export default function ContactUs() {
     return (
         <>
-            <div className="about-us ">
-                <div className=" h-full relative">
-                    <div className="head-cover w-full h-[700px] relative " >
-                        <div className="image w-full h-full">
-                            <img src="assets/images/rawid-alhikma.jpg" alt="cover" className="w-full h-full" />
-                        </div>
-                        <div className="cover w-full h-full absolute top-0 right-0 bottom-0 left-0 flex flex-col  pt-[100px]" style={{ backgroundColor: "#2A3D8B", opacity: "0.9" }}>
-
-                            <div className="main-title  w-[60%]  mx-auto mt-[0px]">
-                                <h4 className="font-[700] text-[#fff] text-[36px] leading-[50px] pb-[20px] text-center">شركة رواد الحكمة للمحاماة والاستشارات القانونية
-                                </h4>
-
-                                <p className="pargraph font-[300] text-[#fff] text-[18px] leading-[29px] text-center pb-[30px]">
-                                    شركة رواد الحكمة للمحاماة والاستشارات القانونية شركة مهنية ذات مسؤولية محدودة، مرخص لها بتقديم الخدمات القانونية من قبل وزارة العدل في المملكة العربية السعودية، تتكون من مجموعة من المحامين والمستشارين الحاصلين على درجات علمية عليا ، يتمتعون بخبرة واسعة تمتد لثلاثين عاما في مجالات القانون المختلفة كالقضاء التجاري والإداري والمنازعات المدنية لتشكل بذلك افضل كيان محاماة في المملكة ومجموعة متكاملة من خدمات المحاماة والاستشارات القانونية والشرعية وفق أعلى معايير الجودة
-                                </p>
+            <div className="contact-us my-44">
+                <div className="container w-[95%] mx-auto">
+                    <div className="contatc-info flex flex-col md:flex-row gap-6 justify-between items-center">
+                        <div className="address flex flex-row gap-6">
+                            <div className="text flex flex-col text-right">
+                                <h3 className="text-[rgb(19,_71,_118)] text-[24px] leading-[34px] font-[700]">عنوان</h3>
+                                <p className="text-[rgb(19,_71,_118)] text-[18px] leading-[29px] font-[300]">عمر بن عبدالعزيز - حي الصريف -ينبع</p>
                             </div>
-
-                            <div className="container mx-auto">
-                                <ul className="flex flex-col sm:flex-row justify-center items-start flex-wrap mt-4">
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end ">
-                                        <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">الاحترافية</p>
-                                        <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
-                                            <FontAwesomeIcon icon={faCheck} className="text-white font-[900] text-[18px] leading-[36px]" />
-                                        </div>
-                                    </li>
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end">
-                                        <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">الخبرة</p>
-                                        <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
-                                            <FontAwesomeIcon icon={faBalanceScale} className="text-white font-[900] text-[18px] leading-[36px]" />
-                                        </div>
-                                    </li>
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end mb-5">
-
-                                        <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">المعرفة</p>
-                                        <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
-                                            <FontAwesomeIcon icon={faGraduationCap} className="text-white font-[900] text-[18px] leading-[36px]" />
-                                        </div>
-                                    </li>
-
-                                    <li className="flex flex-col sm:flex-row md:w-1/7 sm:w-1/3 w-full justify-end">
-                                        <p className="font-[300] text-[#fff] text-[18px] leading-[29px]">الثقة</p>
-                                        <div className="icon bg-[#c9a85e]  px-3 py-2    ml-[10px]  hover:py-3 hover:px-4 transition-[all_1s_ease-in-out]">
-                                            <FontAwesomeIcon icon={faHandshake} className="text-white font-[900] text-[18px] leading-[36px]" />
-                                        </div>
-                                    </li>
-                                </ul>
-                                <button className=" cursor-pointer mx-auto mt-[30px] mb-[50px] font-[300] text-white bg-[#c9a85e]  flex flex-row justify-center items-center
-                            text-[18px] leading-[29px]  hover:bg-[rgb(153,_153,_153)]  border-0 p-[.6em_1.2em]
-                            transition-[background_.2s_ease-in-out,_color_.2s_ease-in-out,_border-color_.2s_ease-in-out_!important]">
-                                    <FontAwesomeIcon icon={faAngleLeft} className="text-white font-[900] text-[18px] leading-[36px] pr-3" />
-                                    <strong>اقرأ أكثر</strong>
-                                </button>
+                            <div className="icon bg-transparent bg-[linear-gradient(135deg,_#C9A85E,_#134776)] cursor-pointer
+                             hover:bg-[linear-gradient(135deg,_#134776,_#C9A85E)]   px-4 py-3 rounded-sm text-center flex flex-col justify-center  ">
+                                <FontAwesomeIcon icon={faLocationDot} className="text-white text-[30px] leading-[60px] font-[900]" />
                             </div>
-
                         </div>
+                        <div className="phone flex flex-row gap-6">
+
+                            <div className="text flex flex-col text-right">
+                                <h3 className="text-[rgb(19,_71,_118)] text-[24px] leading-[34px] font-[700]">رقم الهاتف</h3>
+                                <p className="text-[rgb(19,_71,_118)] text-[18px] leading-[29px] font-[300]">٠٥٤٣٠٠٧٠٠١ - ٠٥٤٣٠٠٧٠٠٢</p>
+                            </div>
+                            <div className="icon bg-transparent bg-[linear-gradient(135deg,_#C9A85E,_#134776)]  cursor-pointer
+                             hover:bg-[linear-gradient(135deg,_#134776,_#C9A85E)]  px-4 py-3 rounded-sm text-center flex flex-col justify-center ">
+                                <FontAwesomeIcon icon={faPhoneVolume} className="text-white text-[30px] leading-[60px] font-[900]" />
+                            </div>
+                        </div>
+                        <div className="email flex flex-row gap-6">
+
+                            <div className="text flex flex-col text-right">
+                                <h3 className="text-[rgb(19,_71,_118)] text-[24px] leading-[34px] font-[700]">البريد الالكترونى</h3>
+                                <p className="text-[rgb(19,_71,_118)] text-[18px] leading-[29px] font-[300]">info@RowadAlHikmah.com</p>
+                            </div>
+                            <div className="icon bg-transparent bg-[linear-gradient(135deg,_#C9A85E,_#134776)]  cursor-pointer
+                             hover:bg-[linear-gradient(135deg,_#134776,_#C9A85E)]   px-4 py-3 rounded-sm text-center flex flex-col justify-center  ">
+
+                                <FontAwesomeIcon icon={faEnvelope} className="text-white text-[30px] leading-[60px] font-[900]" />
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div className="floating-about bg-white pb-[200px]">
-                        <div className="container relative">
-                            <div className="notifcation bg-[linear-gradient(-45deg,_rgb(201,_168,_94),_rgb(19,_71,_118))] w-[90%] mx-auto 
-                            absolute bottom-[-96px] left-[5%] p-[50px_50px] flex flex-col sm:flex-row justify-between items-center gap-2">
-                                <div className="w-1/4">
-                                    <button className="group cursor-pointer font-[300] text-[#1e4686] bg-[white]  flex flex-row justify-center 
-                              items-center text-[18px] leading-[29px]  hover:bg-[transparent] hover:border-[white] hover:border-2 border-0 hover:text-white p-[.6em_1.2em]
-                            transition-[background_.2s_ease-in-out,_color_.2s_ease-in-out,_border-color_.2s_ease-in-out_!important]">
-                                        <FontAwesomeIcon icon={faAngleLeft} className="text-[#1e4686]  group-hover:text-white font-[900] text-[18px] leading-[36px] pr-3" />
-                                        <strong>ارسل طلب</strong>
-                                    </button>
+
+                </div>
+                <div className="contact-form-map ">
+                    <div className="container w-[95%] mx-auto flex flex-wrap flex-col md:flex-row mt-20 justify-between items-center">
+
+                        <div className="w-1/2 map  h-[500px]">
+                            <iframe className="w-full h-full"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.692093819811!2d38.0823126!3d24.0771452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15b90795c6e6e43b%3A0x26f1150961ae3a32!2z2LTYsdmD2Kkg2LHZiNin2K8g2KfZhNit2YPZhdipINmE2YTZhdit2KfZhdin2Kkg2YjYp9mE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YLYp9mG2YjZhtmK2Kk!5e0!3m2!1sar!2seg!4v1749574632456!5m2!1sar!2seg"
+                                style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div className="w-1/2 contact-form text-right">
+                            <h1 className="text-[rgb(19,_71,_118)] text-[38px] leading-[53px] font-[700]"
+                            >اتصل بشركة رواد الحكمة <span className="text-[rgb(201,_168,_94)]">للمحاماة</span></h1>
+                            <p className="sub-title text-[rgb(189,_189,_189)] text-[18px] leading-[29px] font-[300]">ارسل رسالة. سنتواصل معك بأقرب وقت </p>
+
+
+                            <form className="mt-9 px-3">
+                                <div className="relative z-0 w-full mb-5 group">
+                                    <input type="name" name="name" id="name" placeholder="(*)اسمك"
+                                        className="text-[rgba(0,_0,_0,_0.5)]   text-right
+                                 dark:text-white focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                text-[16px] leading-[normal] font-[400] block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none  " required />
                                 </div>
-                                <div className="w-1/2">
-                                    <h3 className="font-[700] text-[#fff] text-[32px] leading-[45px] text-right">اطلب دراسة قضيتك</h3>
-                                    <p className="font-[300] text-[#fff] text-[18px] leading-[29px] text-right">شركة رواد الحكمة تتيح لك طلب دراسة قضيتك وحيثياتها وبيان موقفك فيها .</p>
+                                <div className="relative z-0 w-full mb-5 group">
+                                    <input name="email" type="email" id="email" placeholder="بريدك الالكترونى"
+                                        className="text-[rgba(0,_0,_0,_0.5)]   text-right
+                                 dark:text-white focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                text-[16px] leading-[normal] font-[400] block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none "  />
                                 </div>
-                                <div className="w-1/10 icon h-[60px]">
-                                    <img src="assets/images/study.webp" alt="study" className="w-full h-full" />
+
+                                <div className="grid md:grid-cols-2 md:gap-6">
+                                    <div className="relative z-0 w-full mb-5 group">
+                                        <input name="email" type="email" id="email" placeholder="(*)الجوال"
+                                            className="text-[rgba(0,_0,_0,_0.5)]   text-right
+                                 dark:text-white focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                text-[16px] leading-[normal] font-[400] block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none  "  />
+                                    </div>
+                                    <div className="relative z-0 w-full mb-5 group">
+                                        <input name="email" type="email" id="email" placeholder="موضوع"
+                                            className="text-[rgba(0,_0,_0,_0.5)]   text-right
+                                 dark:text-white focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                text-[16px] leading-[normal] font-[400] block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none "  />
+                                    </div>
+
                                 </div>
-                            </div>
+                                <div className="relative z-0 w-full mb-5 group">
+                                    <select name="consultings" id="consultings"
+                                        className="block py-3 px-0 w-full  text-[16px] leading-[normal] font-[400]  text-[rgba(0,_0,_0,_0.5)] bg-transparent border-0 border-b-2  text-right
+                                border-[#134776] appearance-none dark:text-white focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                               " >
+                                        <option value="0" disabled selected>الاستشارات</option>
+                                        <option value="1" >دراسة قضية</option>
+                                        <option value="2">الدعم</option>
+                                        <option value="3">اخرى</option>
+
+                                    </select>
+                                </div>
+                                <div className="relative z-0 w-full mb-5 group">
+                                    <textarea name="describtion" id="floating_company" placeholder="الوصف"
+                                        className="block py-3 px-0 w-full  text-[16px] leading-[normal] font-[400]  text-[rgba(0,_0,_0,_0.5)] bg-transparent 
+                                        border-0 border-b-3  text-right
+                                border-[#134776] appearance-none dark:text-white focus:outline-none focus:ring-0  " />
+                                </div>
+                                <div className="w-full flex flex-col justify-center items-end">
+
+                                    <button type="submit" className="text-white focus:ring-4 focus:outline-none  
+                                text-right
+                             focus:ring-gray-300 font-medium text-sm w-full sm:w-auto  bg-transparent bg-[linear-gradient(135deg,_#C9A85E,_#134776)]
+                             px-5 py-4  flex flex-col justify-center cursor-pointer
+                             hover:bg-[linear-gradient(135deg,_#134776,_#C9A85E)] ">ارسل طلبك</button>
+                                </div>
+                            </form>
+
+
                         </div>
+
                     </div>
+
                 </div>
             </div >
         </>

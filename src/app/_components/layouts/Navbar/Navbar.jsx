@@ -1,24 +1,31 @@
 "use client";
 import * as React from "react";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, } from "next/navigation";
 import styles from './nav.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
 
 export default function Navbar() {
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("الرئيسية");
+  const [activeLink, setActiveLink] = useState("/");
+
+  const pathName = usePathname();
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setIsMenuOpen(false); // Close menu when a link is clicked
+  };
+
+  const getLinkClass = (link) => {
+    return activeLink === link ? " " : "";
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLinkClick = (linkName) => {
-    setActiveLink(linkName);
-  };
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 mb-[200px]">
@@ -98,16 +105,18 @@ export default function Navbar() {
               <Link
                 href="/contactUs"
                 passHref
-                className={`${styles.navtext} block py-2 px-3 ${activeLink === "تواصل معنا" ? styles.active : ''} block py-2 px-3`}
-                onClick={() => handleLinkClick("انظمة ومقالات")} aria-current="page">تواصل معنا
+                className={`${styles.navtext}  block py-2 px-3 ${pathName === "/contactUs" ? styles.active : ''}
+                 ${getLinkClass("/contactUs")}`}
+                onClick={() => handleLinkClick("/contactUs")} aria-current="page">تواصل معنا
               </Link>
             </li>
             <li className={`${styles.navlink}`}>
               <Link
-                href="/articles"
+                href="/blog"
                 passHref
-                className={`${styles.navtext} ${activeLink === "انظمة ومقالات" ? styles.active : ''} block py-2 px-3`}
-                onClick={() => handleLinkClick("انظمة ومقالات")}
+                className={`${styles.navtext}  block py-2 px-3 ${pathName === "/blog" ? styles.active : ''}
+                 ${getLinkClass("/blog")}`}
+                onClick={() => handleLinkClick("/blog")}
               >
                 انظمة ومقالات
               </Link>
@@ -115,8 +124,9 @@ export default function Navbar() {
             <li className={`${styles.navlink}`}>
               <Link
                 href="/services"
-                className={`${styles.navtext} ${activeLink === "خدماتنا" ? styles.active : ''} block py-2 px-3`}
-                onClick={() => handleLinkClick("خدماتنا")}
+                className={`${styles.navtext}  block py-2 px-3 ${pathName === "/services" ? styles.active : ''}
+                 ${getLinkClass("/services")}`}
+                onClick={() => handleLinkClick("/services")}
               >
                 خدماتنا
               </Link>
@@ -124,8 +134,9 @@ export default function Navbar() {
             <li className={`${styles.navlink}`}>
               <Link
                 href="/about"
-                className={`${styles.navtext} ${activeLink === "نبذة عن الشركة" ? styles.active : ''} block py-2 px-3`}
-                onClick={() => handleLinkClick("نبذة عن الشركة")}
+                className={`${styles.navtext}  block py-2 px-3 ${pathName === "/about" ? styles.active : ''}
+                 ${getLinkClass("/about")}`}
+                onClick={() => handleLinkClick("/about")}
               >
                 نبذة عن الشركة
               </Link>
@@ -133,8 +144,9 @@ export default function Navbar() {
             <li className={`${styles.navlink}`}>
               <Link
                 href="/"
-                className={`${styles.navtext} ${activeLink === "الرئيسية" ? styles.active : ''} block py-2 px-3`}
-                onClick={() => handleLinkClick("الرئيسية")}
+                className={`${styles.navtext}  block py-2 px-3 ${pathName === "/" ? styles.active : ''}
+                 ${getLinkClass("/")}`}
+                onClick={() => handleLinkClick("/")}
               >
                 الرئيسية
               </Link>
