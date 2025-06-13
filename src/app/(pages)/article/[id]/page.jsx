@@ -298,6 +298,8 @@ export default function Article() {
                     ]
                 },
                 {
+                    id: 2,
+
                     number: "الباب الثانى",
                     title: 'احكام عامة',
                     subjects: [
@@ -313,6 +315,8 @@ export default function Article() {
                     ]
                 },
                 {
+                    id: 3,
+
                     number: "الباب الثالث",
                     title: 'احكام عامة',
                     subjects: [
@@ -331,7 +335,6 @@ export default function Article() {
         }, category: "الاخبار"
 
     });
-    console.log("currentArticle", currentArticle.fullContent)
     return (
         <>
             <div className="article my-44">
@@ -468,10 +471,16 @@ export default function Article() {
                             </div>
                             <div className="similar-articles border border-[rgb(19,_71,_118)] h-[500px] w-full ">
                                 <h2 className="simialr-head">المنشورات ذات صلة ...</h2>
-                                {/* take first 3 articles */}
                                 <div className="articles">
-                                    {articles.filter((article) => article.tag == currentArticle.tag
-                                        && article.category == currentArticle.category)}
+                                    {articles
+                                        .filter(article => article.tag === currentArticle.tag &&
+                                            article.category === currentArticle.category)
+                                        .map(article => (
+                                            <div key={article.id} className="w-full border-b-[0.5px] border-b-[#ccc] py-2 mb-2">
+                                                <h3>{article.title}</h3>
+                                                <p>{article.body}</p>
+                                            </div>
+                                        ))}
                                 </div>
                             </div>
                         </div>
