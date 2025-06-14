@@ -2,10 +2,11 @@
 "use client";
 import * as React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faAngleRight, faClock, faEnvelope, faFolder, faPerson } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleRight, faClock, faCommentAlt, faComments, faEnvelope, faFolder, faPerson } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
 import { useState } from "react";
 import { faFacebookF, faGooglePlus, faGooglePlusG, faPinterest, faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faComment, faFolderOpen } from "@fortawesome/free-regular-svg-icons";
 
 export default function Article() {
     const articles = [
@@ -469,18 +470,114 @@ export default function Article() {
 
                                     </div>}
                             </div>
-                            <div className="similar-articles border border-[rgb(19,_71,_118)] h-[500px] w-full ">
-                                <h2 className="simialr-head">المنشورات ذات صلة ...</h2>
-                                <div className="articles">
+                            <div className="similar-articles border border-[rgb(19,_71,_118)] w-full">
+                                <h2 className="simialr-head pl-24 pr-5 py-5 text-white bg-transparent text-right mx-2 mt-2 mb-5
+                                                bg-[linear-gradient(135deg,_#134776,_#C9A85E)] font-[400] text-[18px] leading-[25px]">... المنشورات ذات صلة</h2>
+                                <div className="articles flex flex-col sm:flex-row-reverse justify-center items-center gap-5 px-2">
+
                                     {articles
-                                        .filter(article => article.tag === currentArticle.tag &&
-                                            article.category === currentArticle.category)
+                                        .filter(article =>
+                                            article.tag === currentArticle.tag &&
+                                            article.category === currentArticle.category &&
+                                            article.id !== currentArticle.id
+                                        )
+                                        .slice(0, 3)
                                         .map(article => (
-                                            <div key={article.id} className="w-full border-b-[0.5px] border-b-[#ccc] py-2 mb-2">
-                                                <h3>{article.title}</h3>
-                                                <p>{article.body}</p>
-                                            </div>
+                                            <Link href={`/article/${article.id}`} key={article.id} className=" cursor-pointer w-full  py-2 mb-2 text-right group">
+                                                <div className="image w-full h-[200px]">
+                                                    <img src={article.image} alt={article.title} className=" w-full h-full" />
+                                                </div>
+                                                <h3 className="pt-5 font-[700] text-[rgb(19,_71,_118)] text-[20px] leading-[28px] group-hover:text-[rgb(201,_168,_94)]">{article.title}</h3>
+                                                <p className="flex flex-row gap-2 justify-end items-center">
+                                                    <span className="font-[400] hover:text-[rgb(19,_71,_118)] text-[14px] leading-[22px] text-[rgb(201,_168,_94)]">{article.category}</span>
+                                                    <FontAwesomeIcon icon={faFolderOpen} className="font-[900]  text-[14px] leading-[14px] text-[rgb(167,_167,_167)]" />
+                                                </p>
+                                            </Link>
                                         ))}
+                                    {articles.filter(article =>
+                                        article.tag === currentArticle.tag &&
+                                        article.category === currentArticle.category &&
+                                        article.id !== currentArticle.id
+                                    ).length === 0 && (
+                                            <p className="text-right">لا توجد مقالات ذات صلة</p>
+                                        )}
+                                </div>
+                            </div>
+                            <div className="contact border border-[rgb(19,_71,_118)] w-full">
+                                <h2 className="flex flex-row gap-2 justify-end items-center simialr-head pl-24 pr-5 py-5 text-white bg-transparent text-right mx-2 mt-2 mb-5
+                                                bg-[linear-gradient(135deg,_#134776,_#C9A85E)] font-[400] text-[18px] leading-[25px]">
+                                    <span>لا تعليق</span>
+                                    <FontAwesomeIcon icon={faComments} />
+                                </h2>
+
+                                <div className=" px-[2.5rem] pb-[0.5rem] form flex flex-col sm:flex-row-reverse justify-center items-center gap-5 ">
+                                    <div className="w-full  contact-form text-right pt-10 md:pt-0">
+                                        <h3 className="text-[rgb(68,_68,_68)] text-[24px] leading-[34px] font-[700] pb-[10px]">
+                                            اترك تعليقاً
+
+                                        </h3>
+
+                                        <p className="
+                                        sub-title text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300]">* لن يتم نشر عنوان بريدك الإلكتروني. الحقول الإلزامية مشار إليها بـ</p>
+
+
+                                        <form className="mt-9">
+                                            <div className="relative z-0 w-full mb-5 group">
+                                                <label htmlFor="comment" className="text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300]">* التعليق</label>
+                                                <textarea name="comment" id="comment" rows="4" cols="50"
+                                                    className="text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300] block py-3 px-0 w-full   bg-transparent 
+                                        border-0 border-b-2  text-right
+                                border-[#134776] appearance-none dark:text-white focus:outline-none focus:ring-0  " />
+                                            </div>
+
+
+
+                                            <div className="grid md:grid-cols-3 md:gap-11">
+                                                <div className="relative z-0 w-full mb-5 group">
+                                                    <label htmlFor="website" className="text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300]">* الموقع الالكترونى</label>
+
+                                                    <input name="website" type="text" id="website"
+                                                        className="ext-right text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300] focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none  "  />
+                                                </div>
+
+
+                                                <div className="relative z-0 w-full mb-5 group">
+                                                    <label htmlFor="email" className="text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300]">* البريد الالكترونى</label>
+
+                                                    <input name="email" type="email" id="email"
+                                                        className="ext-right text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300] focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none   "  />
+                                                </div>
+                                                <div className="relative z-0 w-full mb-5 group">
+                                                    <label htmlFor="name" className="text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300]">* الاسم</label>
+
+                                                    <input name="name" type="text" id="email"
+                                                        className="ext-right text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300] focus:outline-none focus:ring-0 focus:border-gray-600 peer
+                                block py-3 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-[#134776] 
+                                 appearance-none   "  />
+                                                </div>
+                                            </div>
+                                            <div className="relative z-0 w-full mb-5 group text-right flex flex-row justify-end items-center gap-2 pt-[30px] pb-[10px]">
+                                                <label htmlFor="save_name" className="text-[rgb(68,_68,_68)] text-[18px] leading-[29px] font-[300]"> . احفظ اسمي، بريدي الإلكتروني، والموقع الإلكتروني في هذا المتصفح لاستخدامها المرة المقبلة في تعليقي</label>
+
+                                                <input type="checkbox" id="save_name" name="save_name" />
+                                            </div>
+
+                                            <div className="w-full flex flex-col justify-center items-end pb-[30px]">
+
+                                                <button type="submit" className=" focus:ring-4 focus:outline-none  
+                                text-right text-[15px] leading-[normal] font-[400]
+                             focus:ring-gray-300  sm:w-auto hover:border-[#134776] hover:bg-white hover:text-[#134776] text-white
+                             px-5 py-4  flex flex-col justify-center cursor-pointer 
+                             bg-[#134776] ">ارسال تعليق</button>
+                                            </div>
+                                        </form>
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
